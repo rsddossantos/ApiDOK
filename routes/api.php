@@ -25,9 +25,9 @@ Route::get('/ping', function() {
  * @params: name, email, password
  * @validation: all required / email valid and nonexistent
  */
-Route::post('/user', [AuthController::class, 'list']);
+Route::post('/user', [AuthController::class, 'create']);
 
-Route::get('/user', [UserController::class, 'read']);
+Route::get('/user', [UserController::class, 'list']);
 
 /*
  * @params: token, name, email, password
@@ -35,6 +35,9 @@ Route::get('/user', [UserController::class, 'read']);
  */
 Route::post('/user/update', [UserController::class, 'update']);
 
+/*
+ * @params: token
+ */
 Route::get('/user/delete/{id}', [UserController::class, 'delete']);
 
 /*
