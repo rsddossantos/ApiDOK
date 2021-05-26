@@ -11,7 +11,7 @@ class AuthController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth:api', ['except' => ['login', 'create', 'list', 'unauthorized']]);
+        $this->middleware('auth:api', ['except' => ['login', 'create', 'unauthorized']]);
     }
 
     public function create(Request $request)
