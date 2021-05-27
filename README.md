@@ -7,19 +7,19 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-API em Laravel que ir· devolver mensagens em formato JSON para um CRUD de usu·rio.
-<br>Possui autenticaÁ„o JWT e contÈm tambÈm mÈtodos para login, logout e refresh do token.
+API em Laravel que ir√° devolver mensagens em formato JSON para um CRUD de usu√°rio.
+<br>Possui autentica√ß√£o JWT e cont√©m tamb√©m m√©todos para login, logout e refresh do token.
 
 <hr>
 
-### InstruÁıes:
+### Instru√ß√µes:
 
 - Clonar o projeto
-- Atualizar as dependÍncias:<br><br>
+- Atualizar as depend√™ncias:<br><br>
   <code>composer install</code>
   <br><br>
 - Renomear arquivo <strong>.env.example</strong> para <strong>.env</strong>
-- Gerar chave da aplicaÁ„o:<br><br>
+- Gerar chave da aplica√ß√£o:<br><br>
   <code>php artisan key:generate</code>
   <br><br>
 - Gerar secret do autenticador JWT:<br><br>
@@ -30,19 +30,23 @@ API em Laravel que ir· devolver mensagens em formato JSON para um CRUD de usu·ri
 - Executar a migration:<br><br>
   <code>php artisan migrate</code>
   <br><br>
-- Subir o serviÁo:<br><br>
+- Subir o servi√ßo:<br><br>
   <code>php artisan serve</code>  
-
+  
 <hr>
 
 ### Funcionamento e Endpoits:
 
 Recomendamos utilizar para os testes o site https://resttesttest.com/
 
-- Verificar em <strong>routes/api.php</strong> os endpoints e par‚metros exigidos.
-- Somente a criaÁ„o de usu·rio e login geram Token. Utilizar essas aÁıes para obter o token
-e assim utiliz·-lo nas rotinas que exigem.
+- Verificar em <strong>routes/api.php</strong> os endpoints e par√¢metros exigidos.
+- Somente a cria√ß√£o de usu√°rio e login geram Token. Utilizar essas a√ß√µes para obter o token
+e assim utiliz√°-lo nas rotinas que exigem.
 - O token expira em 60 minutos.
+
+EXEMPLO
+
+![image](https://user-images.githubusercontent.com/61060100/119753381-12c0ac00-be75-11eb-873a-e1ac9f84e1c8.png)
 
 
   
